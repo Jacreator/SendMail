@@ -10,6 +10,7 @@ To run this code successfully the following tools are need
 <li>Any IDE that Run Java</li>
 <li>A valid Email Address</li>
 <li>Go to Manage your Google Account -> Security -> Less secure app access -> Turn on access (not recommended) or <link href="https://www.google.com/settings/security/lesssecureapps"> Click here</li>
+<li>Maven</li>
 
 
 ## NOTICE!!!
