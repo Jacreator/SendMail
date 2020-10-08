@@ -20,10 +20,10 @@ import javax.mail.internet.MimeMultipart;
 public class SendMailAtt {
     public static void main(String[] args) {
         // Recipient's email ID needs to be mentioned.
-        String to = "lewikeezy@gmail.com";
+        String to = "whereYouWant@gmail.com";
 
         // Sender's email ID needs to be mentioned
-        String from = "jambone.james82@gmail.com";
+        final String from = "whoYouAre@gmail.com";
 
         // Assuming you are sending email from through gmails smtp
         String host = "smtp.gmail.com";
@@ -42,7 +42,7 @@ public class SendMailAtt {
 
             protected PasswordAuthentication getPasswordAuthentication() {
 
-                return new PasswordAuthentication("jambone.james82@gmail.com", "LoisJames1");
+                return new PasswordAuthentication(from, "*********");
 
             }
 
@@ -70,10 +70,10 @@ public class SendMailAtt {
             try {
 
 //                file to Attach for sending
-                File f =new File("C:\\Users\\James\\Downloads\\church.jpg");
+                File f =new File("C:\\fileDir\\file.fileExtension");
 
                 attachmentPart.attachFile(f);
-                textPart.setText("This is test from James");
+                textPart.setText("This is test");
                 multipart.addBodyPart(textPart);
                 multipart.addBodyPart(attachmentPart);
 
